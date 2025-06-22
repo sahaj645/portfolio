@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
+import movieImage from '../assets/movie.png'; 
+import chrunImage from '../assets/chrun.png'; 
+import cancerImage from '../assets/cancer.png'; 
+import travelImage from '../assets/travel.png'; 
+import causeListImage from '../assets/causeList.png'; 
+import chatImage from '../assets/chat.jpg'; 
+import todoImage from '../assets/todo.jpg'; 
+import mealsImage from '../assets/meals.jpg'; 
+import tttImage from '../assets/ttt.jpg'; 
+
 
 const Projects = () => {
   const [category, setCategory] = useState('All');
@@ -7,45 +17,92 @@ const Projects = () => {
   const projects = [
     {
       title: 'Movie-Recommendation System',
-      category: 'Web',
-      image: 'https://source.unsplash.com/random/800x600/?ecommerce',
-      description: 'A full-stack online shopping platform with user authentication and payment integration.',
-      techStack: ['React', 'Node.js', 'MongoDB', 'Express.js'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      category: ['Web', 'ML'], // Changed to array to support multiple categories
+      image: movieImage,
+      description: 'A web application that recommends movies similar to a selected title using content-based filtering.',
+      techStack: ['React', 'Fast Api', 'NLP'],
+      github: 'https://github.com/AabhasGaur19/movie-recommendation-website',
+      demo: 'https://movie-recommendation-website-eight.vercel.app/',
     },
     {
-      title: 'Task Management App',
-      category: 'Mobile',
-      image: 'https://source.unsplash.com/random/800x600/?mobile',
-      description: 'A cross-platform mobile app for task organization and team collaboration.',
-      techStack: ['Flutter', 'Firebase', 'Dart'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      title: 'Chat App',
+      category: ['Mobile'],
+      image: chatImage,
+      description: 'A mobile application that enables seamless real-time messaging between users.',
+      techStack: ['Flutter', 'Firebase', 'Dart','Node.js','MongoDB Atlas','Socket.io'],
+      github: 'https://github.com/AabhasGaur19/chat-app',
+      // demo: 'https://example.com',
     },
     {
-      title: 'Image Classification Model',
-      category: 'ML',
-      image: 'https://source.unsplash.com/random/800x600/?machine-learning',
-      description: 'A deep learning model for classifying images using convolutional neural networks.',
-      techStack: ['Python', 'TensorFlow', 'Keras', 'NumPy'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      title: 'Brest cancer predection',
+      category: ['ML'],
+      image: cancerImage,
+      description: 'A smart system that helps identify the likelihood of breast cancer early for better health outcomes.',
+      techStack: ['Python', 'NumPy','Pandas','Logistic Rgression','Random Forest'],
+      github: 'https://github.com/AabhasGaur19/Breast-cancer-',
+      // demo: 'https://example.com',
     },
     {
-      title: 'Portfolio Website',
-      category: 'Web',
-      image: 'https://source.unsplash.com/random/800x600/?portfolio',
-      description: 'A personal portfolio showcasing projects and skills with a modern UI.',
-      techStack: ['React', 'Tailwind CSS', 'Vite'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+      title: 'Customer Chrun Predection',
+      category: ['ML'],
+      image: chrunImage,
+      description: 'A smart system that helps understand which customers are likely to stop using a service, enabling timely action to retain them.',
+      techStack: ['Python', 'NumPy','Pandas','Logistic Rgression','Random Forest','XG boost'],
+      github: 'https://github.com/AabhasGaur19/Customer-churn-rate-prediction',
+      // demo: 'https://example.com',
+    },
+    {
+      title: 'Holiday booking site',
+      category: ['Web'],
+      image: travelImage,
+      description: 'A user-friendly platform that makes planning and booking holidays easy and hassle-free.',
+      techStack: ['HTML','Css','Java-script','AOS'],
+      github: 'https://github.com/AabhasGaur19/Holiday-Booking',
+      // demo: 'https://example.com', // deploy this 
+    },
+    {
+      title: 'CauseList simplifier',
+      category: ['Web'],
+      image: causeListImage,
+      description: 'A helpful tool that simplifies and organizes complex court case lists, making them easier to understand .',
+      techStack: ['React', 'Node.js'],
+      github: 'https://github.com/AabhasGaur19/Mahesh-sharma-and-associate',
+      demo: 'https://mahesh-sharma-and-associate.vercel.app/', // deploy this 
+    },
+    {
+      title: 'TO-DO app',
+      category: ['Mobile'],
+      image: todoImage,
+      description: 'An easy-to-use app that helps you organize tasks and stay on top of your daily goals.',
+      techStack: ['Dart','Flutter'],
+      github: 'https://github.com/AabhasGaur19/Task-app',
+      // demo: '',  
+    },
+    {
+      title: 'Meals app',
+      category: ['Mobile'],
+      image: mealsImage,
+      description: 'A mobile app that serves as a digital menu, making it easy to browse and choose meals on the go.',
+      techStack: ['Dart','Flutter'],
+      github: 'https://github.com/AabhasGaur19/Meals-app',
+      // demo: '',  
+    },
+    {
+      title: 'Tic-Tac-Toe',
+      category: ['Mobile'],
+      image: tttImage,
+      description: 'A fun and interactive game that lets users enjoy classic Tic-Tac-Toe anytime.',
+      techStack: ['Dart','Flutter'],
+      github: 'https://github.com/AabhasGaur19/TIC-TAC-TOE-Mobile',
+      // demo: '',  
     },
   ];
 
   const categories = ['All', 'Web', 'Mobile', 'ML'];
 
-  const filteredProjects = category === 'All' ? projects : projects.filter(project => project.category === category);
+  const filteredProjects = category === 'All' ? projects : projects.filter(project => 
+    Array.isArray(project.category) ? project.category.includes(category) : project.category === category
+  );
 
   return (
     <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">
@@ -104,14 +161,24 @@ const Projects = () => {
                 
                 {/* Category Badge */}
                 <div className="absolute top-4 right-4">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-semibold text-gray-800 rounded-full">
-                    {project.category}
-                  </span>
+                  {Array.isArray(project.category) ? (
+                    <div className="flex flex-col gap-1">
+                      {project.category.map(cat => (
+                        <span key={cat} className="px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-semibold text-gray-800 rounded-full">
+                          {cat}
+                        </span>
+                      ))}
+                    </div>
+                  ) : (
+                    <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-semibold text-gray-800 rounded-full">
+                      {project.category}
+                    </span>
+                  )}
                 </div>
               </div>
 
               {/* Project Content */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-64">
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">
                   {project.title}
                 </h3>
@@ -120,19 +187,19 @@ const Projects = () => {
                 </p>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4 flex-grow">
                   {project.techStack.map(tech => (
                     <span
                       key={tech}
-                      className="px-2 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 text-xs font-medium rounded-full border border-blue-200/50"
+                      className="px-2 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 text-xs font-medium rounded-full border border-blue-200/50 h-fit"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                {/* Action Buttons */}
-                <div className="flex space-x-4">
+                {/* Action Buttons - Always at bottom */}
+                <div className="flex space-x-4 mt-auto">
                   <a
                     href={project.github}
                     target="_blank"
@@ -161,7 +228,7 @@ const Projects = () => {
         <div className="text-center mt-16">
           <p className="text-gray-600 mb-6">Want to see more of my work?</p>
           <a
-            href="https://github.com"
+            href="https://github.com/AabhasGaur19"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"

@@ -1,177 +1,8 @@
-// import React from 'react';
-// import { Icon } from '@iconify/react';
-
-// const Achievements = () => {
-//   const achievements = [
-//     {
-//       title: 'AWS Certified Developer',
-//       description: 'Earned the AWS Certified Developer - Associate certification, demonstrating proficiency in cloud development with AWS services.',
-//       icon: 'logos:aws',
-//       link: 'https://aws.amazon.com/certification/certified-developer-associate/',
-//     },
-//     {
-//       title: 'Hackathon Winner',
-//       description: 'Won 1st place in the 2022 TechFest Hackathon for developing an innovative task management app.',
-//       icon: 'material-symbols:trophy',
-//       link: 'https://example.com',
-//     },
-//     {
-//       title: 'Coursera Machine Learning',
-//       description: 'Completed the Machine Learning Specialization by Stanford Online on Coursera, covering supervised and unsupervised learning.',
-//       icon: 'logos:coursera',
-//       link: 'https://www.coursera.org/specializations/machine-learning',
-//     },
-//     {
-//       title: 'Google Code Jam Finalist',
-//       description: 'Reached the final round of Google Code Jam 2023, showcasing strong problem-solving and coding skills.',
-//       icon: 'logos:google-icon',
-//       link: 'https://codingcompetitions.withgoogle.com/codejam',
-//     },
-//   ];
-
-//   return (
-//     <section id="achievements" className="py-16 bg-gray-100 dark:bg-gray-800">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <h2
-//           className="text-4xl font-bold text-center text-gray-900 dark:text-white mb-12"
-//           data-aos="fade-down"
-//           data-aos-duration="600"
-//         >
-//           Achievements & Certifications
-//         </h2>
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-//           {achievements.map((achievement, index) => (
-//             <div
-//               key={achievement.title}
-//               className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
-//               data-aos="fade-up"
-//               data-aos-duration="600"
-//               data-aos-delay={index * 100}
-//             >
-//               <div className="flex items-center mb-4">
-//                 <Icon icon={achievement.icon} width="40" height="40" className="mr-4" />
-//                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-//                   {achievement.title}
-//                 </h3>
-//               </div>
-//               <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-//                 {achievement.description}
-//               </p>
-//               {achievement.link && (
-//                 <a
-//                   href={achievement.link}
-//                   target="_blank"
-//                   rel="noopener noreferrer"
-//                   className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
-//                 >
-//                   View Details
-//                 </a>
-//               )}
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Achievements;
-
-
-// import React from 'react';
-// import { Icon } from '@iconify/react';
-
-// const Achievements = () => {
-//   const achievements = [
-//     {
-//       title: 'AWS Certified Developer',
-//       description: 'Earned the AWS Certified Developer - Associate certification, demonstrating proficiency in cloud development with AWS services.',
-//       icon: 'logos:aws',
-//       link: 'https://aws.amazon.com/certification/certified-developer-associate/',
-//     },
-//     {
-//       title: 'Hackathon Winner',
-//       description: 'Won 1st place in the 2022 TechFest Hackathon for developing an innovative task management app.',
-//       icon: 'material-symbols:trophy',
-//       link: 'https://example.com',
-//     },
-//     {
-//       title: 'Coursera Machine Learning',
-//       description: 'Completed the Machine Learning Specialization by Stanford Online on Coursera, covering supervised and unsupervised learning.',
-//       icon: 'logos:coursera',
-//       link: 'https://www.coursera.org/specializations/machine-learning',
-//     },
-//     {
-//       title: 'Google Code Jam Finalist',
-//       description: 'Reached the final round of Google Code Jam 2023, showcasing strong problem-solving and coding skills.',
-//       icon: 'logos:google-icon',
-//       link: 'https://codingcompetitions.withgoogle.com/codejam',
-//     },
-//   ];
-
-//   return (
-//     <section id="achievements" className="py-16 bg-gray-100">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <h2
-//           className="text-4xl font-bold text-center text-gray-900 mb-12"
-//           data-aos="fade-down"
-//           data-aos-duration="600"
-//         >
-//           Achievements & Certifications
-//         </h2>
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-//           {achievements.map((achievement, index) => (
-//             <div
-//               key={achievement.title}
-//               className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
-//               data-aos="fade-up"
-//               data-aos-duration="600"
-//               data-aos-delay={index * 100}
-//             >
-//               <div className="flex items-center mb-4">
-//                 <Icon icon={achievement.icon} width="40" height="40" className="mr-4" />
-//                 <h3 className="text-xl font-semibold text-gray-900">
-//                   {achievement.title}
-//                 </h3>
-//               </div>
-//               <p className="text-gray-600 text-sm mb-4">
-//                 {achievement.description}
-//               </p>
-//               {achievement.link && (
-//                 <a
-//                   href={achievement.link}
-//                   target="_blank"
-//                   rel="noopener noreferrer"
-//                   className="text-blue-600 hover:underline text-sm"
-//                 >
-//                   View Details
-//                 </a>
-//               )}
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Achievements;
-
-
-
-
 import React from 'react';
 import { Icon } from '@iconify/react';
 
 const Achievements = () => {
   const achievements = [
-    {
-      title: 'AWS Certified Developer',
-      description: 'Earned the AWS Certified Developer - Associate certification, demonstrating proficiency in cloud development with AWS services.',
-      icon: 'logos:aws',
-      link: 'https://aws.amazon.com/certification/certified-developer-associate/',
-      color: 'from-orange-400 to-red-500'
-    },
     {
       title: 'Hackathon Winner',
       description: 'Won 1st place in the 2022 TechFest Hackathon for developing an innovative task management app.',
@@ -179,19 +10,40 @@ const Achievements = () => {
       link: 'https://example.com',
       color: 'from-yellow-400 to-amber-500'
     },
+    // {
+    //   title: 'AWS Certified Developer',
+    //   description: 'Earned the AWS Certified Developer - Associate certification, demonstrating proficiency in cloud development with AWS services.',
+    //   icon: 'logos:aws',
+    //   link: 'https://aws.amazon.com/certification/certified-developer-associate/',
+    //   color: 'from-orange-400 to-red-500'
+    // },
     {
-      title: 'Coursera Machine Learning',
+      title: 'Introduction to Statistics (Stanford)',
+      description: 'Earned the AWS Certified Developer - Associate certification, demonstrating proficiency in cloud development with AWS services.',
+      icon: 'logos:coursera',
+      link: 'https://aws.amazon.com/certification/certified-developer-associate/',
+      color: 'from-blue-400 to-indigo-500'
+    },
+    {
+      title: 'Introduction to Data Science in Python (University of Michigan)',
       description: 'Completed the Machine Learning Specialization by Stanford Online on Coursera, covering supervised and unsupervised learning.',
       icon: 'logos:coursera',
       link: 'https://www.coursera.org/specializations/machine-learning',
       color: 'from-blue-400 to-indigo-500'
     },
     {
-      title: 'Google Code Jam Finalist',
+      title: 'Flutter & Dart - The Complete Guide',
       description: 'Reached the final round of Google Code Jam 2023, showcasing strong problem-solving and coding skills.',
-      icon: 'logos:google-icon',
+      icon: 'logos:udemy',
       link: 'https://codingcompetitions.withgoogle.com/codejam',
-      color: 'from-green-400 to-emerald-500'
+      color: 'from-white-400 to-white-500'
+    },
+    {
+      title: 'The Web Developer BootCamp 2025',
+      description: 'Reached the final round of Google Code Jam 2023, showcasing strong problem-solving and coding skills.',
+      icon: 'logos:udemy',
+      link: 'https://codingcompetitions.withgoogle.com/codejam',
+      color: 'from-white-400 to-white-500'
     },
   ];
 
