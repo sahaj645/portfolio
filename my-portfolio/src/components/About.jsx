@@ -210,7 +210,7 @@ const About = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Current Year</span>
-                    <span className="font-semibold text-gray-800">3rd Year</span>
+                    <span className="font-semibold text-gray-800">4th Year</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Specialization</span>
