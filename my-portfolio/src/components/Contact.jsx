@@ -22,6 +22,8 @@ const Contact = () => {
   const socialLinks = [
     { name: 'LinkedIn', icon: 'logos:linkedin-icon', url: 'https://www.linkedin.com/in/aabhas-gaur-13406123a/' },
     { name: 'GitHub', icon: 'logos:github-icon', url: 'https://github.com/AabhasGaur19' },
+    { name: 'WhatsApp', icon: 'logos:whatsapp-icon', url: 'https://wa.me/9829146140' },
+    { name: 'Twitter', icon: 'logos:twitter', url: 'https://twitter.com/aabhas_gaur' },
   ];
 
   return (
@@ -112,7 +114,7 @@ const Contact = () => {
             </div>
           </div>
           <div
-            className="flex flex-col justify-center bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50"
+            className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/50"
             data-aos="fade-left"
             data-aos-duration="600"
             data-aos-delay="200"

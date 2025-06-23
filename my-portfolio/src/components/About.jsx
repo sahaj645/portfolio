@@ -102,10 +102,14 @@ const About = () => {
                     </div>
                     
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      I'm a passionate web, mobile, and AI/ML developer currently pursuing my studies in Computer Science. 
-                      I enjoy building responsive applications using <span className="font-semibold text-blue-600">React</span>, 
-                      <span className="font-semibold text-green-600"> Tailwind CSS</span>, and 
-                      <span className="font-semibold text-purple-600"> Flutter</span>, while exploring intelligent solutions with machine learning.
+I'm a passionate web, mobile, and AI/ML developer currently pursuing my studies in Computer Science. 
+I enjoy building responsive applications with <span className="font-semibold text-blue-600">web development</span>, 
+<span className="font-semibold text-purple-600"> mobile development</span>
+, and
+<span className="font-semibold text-green-600"> database management</span> 
+, along with 
+<span className="font-semibold text-orange-600"> problem solving</span> and exploring intelligent solutions with 
+<span className="font-semibold text-indigo-600"> machine learning</span>.
                     </p>
                     
                     <p className="text-lg text-gray-700 leading-relaxed">
@@ -157,8 +161,8 @@ const About = () => {
                                   <span className="text-blue-600 font-medium">CGPA: 9.19/10</span>
                                 </div>
                                 <div className="flex items-center gap-1">
-                                  <Calendar className="w-4 h-4 text-gray-500" />
-                                  <span className="text-gray-500 text-sm">2022-2026</span>
+                                  {/* <Calendar className="w-4 h-4 text-gray-500" /> */}
+                                  {/* <span className="text-gray-500 text-sm">2022-2026</span> */}
                                 </div>
                               </div>
                             </div>

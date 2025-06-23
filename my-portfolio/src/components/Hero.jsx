@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { ChevronDown, Download, Mail, Github, Linkedin, MapPin, Coffee, Code2, Sparkles,Smartphone ,Laptop,BrainCircuit } from 'lucide-react';
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [displayText, setDisplayText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
 
-  const roles = [
+  const roles = useMemo(() => [
     { text: 'Full Stack Developer', icon: Code2, color: 'text-blue-300' },
     { text: 'Web Developer', icon: Laptop, color: 'text-green-300' },
     { text: 'Mobile Developer', icon: Smartphone, color: 'text-yellow-300' },
@@ -14,16 +16,10 @@ const Hero = () => {
     { text: 'UI/UX Enthusiast', icon: Sparkles, color: 'text-pink-300' },
     { text: 'Tech Explorer', icon: Code2, color: 'text-indigo-300' },
     { text: 'Good Human', icon: Coffee, color: 'text-red-300' }
-  ];
+  ], []);
 
   useEffect(() => {
     setIsVisible(true);
-    
-    const interval = setInterval(() => {
-      setCurrentRole((prev) => (prev + 1) % roles.length);
-    }, 2500);
-
-    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
@@ -37,6 +33,39 @@ const Hero = () => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
+
+  // Typewriter effect
+  useEffect(() => {
+    const currentText = roles[currentRole].text;
+    let timeout;
+
+    if (isTyping) {
+      // Typing phase
+      if (displayText.length < currentText.length) {
+        timeout = setTimeout(() => {
+          setDisplayText(currentText.slice(0, displayText.length + 1));
+        }, 50); // Faster typing speed
+      } else {
+        // Pause before deleting
+        timeout = setTimeout(() => {
+          setIsTyping(false);
+        }, 1000); // Shorter pause duration
+      }
+    } else {
+      // Deleting phase
+      if (displayText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1));
+        }, 30); // Much faster deleting speed
+      } else {
+        // Move to next role and start typing
+        setCurrentRole((prev) => (prev + 1) % roles.length);
+        setIsTyping(true);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isTyping, currentRole, roles]);
 
   const currentRoleData = roles[currentRole];
   const IconComponent = currentRoleData.icon;
@@ -105,12 +134,13 @@ const Hero = () => {
             </span>
           </h1>
 
-          {/* Enhanced role display with icons */}
+          {/* Enhanced role display with typewriter effect */}
           <div className="h-20 flex items-center justify-center mb-4">
             <div className={`flex items-center gap-3 text-2xl sm:text-3xl md:text-4xl font-medium transition-all duration-500 ${currentRoleData.color}`}>
               <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 animate-pulse" />
-              <span className="transform transition-all duration-500">
-                {currentRoleData.text}
+              <span className="transform transition-all duration-500 min-w-0">
+                {displayText}
+                <span className="animate-pulse">|</span>
               </span>
             </div>
           </div>

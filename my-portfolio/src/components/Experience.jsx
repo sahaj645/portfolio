@@ -7,7 +7,7 @@ const Experience = () => {
       role: 'Backend developer',
       duration: 'May 2025 - July 2025',
       description:
-        'Developed responsive UI components for a web application, collaborated with designers to implement pixel-perfect designs, and optimized performance using React best practices.',
+        'I developed FastAPI-based NLP services integrated with Pinecone for semantic search and implemented OAuth authentication using Supabase for secure user access. I also worked with AWS S3 for efficient file storage and retrieval, and utilized PostgreSQL and MongoDB to manage structured and unstructured data. Operating within Agile sprints, I contributed to test coverage using Pytest and maintained comprehensive project documentation using Jira and Confluence.',
       techStack: ['FastApi','AWS','SQLAlchemy','Supabase','PostgreSQL'],
       color: 'from-blue-500 to-cyan-500'
     },
@@ -16,7 +16,7 @@ const Experience = () => {
       role: 'Web developer',
       duration: 'June 2025 - July 2025',
       description:
-        'Built a cross-platform mobile app using Flutter, integrated Firebase for real-time data syncing, and conducted unit testing to ensure app reliability.',
+        "I developed a Cause List Simplifier for a law firm to streamline daily case listings issued by the Jaipur High Court. The original Cause Lists were published in a cluttered and unstructured format, making it time-consuming for legal professionals to extract relevant case information. My solution parsed and transformed this data into a clean, organized format, significantly improving readability and efficiency for the firm's daily workflow.",
       techStack: ['React','Node.js'],
       color: 'from-purple-500 to-pink-500'
     },
@@ -25,7 +25,7 @@ const Experience = () => {
       role: 'Frontend devloper',
       duration: 'June 2023 - August 2023',
       description:
-        'Designed and trained a predictive model using TensorFlow, performed data preprocessing with Pandas, and presented findings to stakeholders.',
+        'I developed and launched a responsive website using React.js and Tailwind CSS, delivering a high-fidelity user interface that enhanced user engagement. I collaborated closely with design teams to accurately translate complex wireframes into fully functional, interactive web pages, ensuring consistency with the intended user experience and design goals.',
       techStack: ['React', 'TypeScript', 'Tailwind CSS'],
       color: 'from-green-500 to-emerald-500'
     },
