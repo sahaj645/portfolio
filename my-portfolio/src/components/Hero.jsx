@@ -155,7 +155,7 @@ const Hero = () => {
           {/* Stats or highlights */}
           <div className="flex justify-center gap-8 mt-8 mb-10">
             <div className="text-center">
-              <div className="text-2xl font-bold text-white">50+</div>
+              <div className="text-2xl font-bold text-white">10+</div>
               <div className="text-sm text-white/70">Projects</div>
             </div>
             <div className="text-center">
