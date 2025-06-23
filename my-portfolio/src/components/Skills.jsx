@@ -17,11 +17,11 @@ const Skills = () => {
       bgColor: 'from-blue-50 to-blue-100',
       borderColor: 'border-blue-500',
       skills: [
-        { name: 'JavaScript', desc: 'Modern ES6+ features' },
-        { name: 'Python', desc: 'Data science & backend' },
-        { name: 'Java', desc: 'Enterprise applications' },
-        { name: 'C++', desc: 'System programming' },
         { name: 'C', desc: 'Low-level programming' },
+        { name: 'C++', desc: 'System programming' },
+        { name: 'Java', desc: 'Enterprise applications' },
+        { name: 'Python', desc: 'Data science & backend' },
+        { name: 'JavaScript', desc: 'Modern ES6+ features' },
         { name: 'Dart', desc: 'Flutter development' },
         { name: 'R', desc: 'Statistical computing' }
       ]
@@ -33,11 +33,11 @@ const Skills = () => {
       bgColor: 'from-purple-50 to-purple-100',
       borderColor: 'border-purple-500',
       skills: [
+        { name: 'HTML/CSS', desc: 'Modern web standards' },
         { name: 'React.js', desc: 'Component-based UI' },
+        { name: 'Tailwind CSS', desc: 'Utility-first CSS' },
         { name: 'Node.js', desc: 'Server-side JavaScript' },
         { name: 'Express.js', desc: 'Web application framework' },
-        { name: 'HTML/CSS', desc: 'Modern web standards' },
-        { name: 'Tailwind CSS', desc: 'Utility-first CSS' },
         { name: 'Flask', desc: 'Python web framework' },
         { name: 'Socket.io', desc: 'Real-time communication' }
       ]
@@ -49,10 +49,9 @@ const Skills = () => {
       bgColor: 'from-green-50 to-green-100',
       borderColor: 'border-green-500',
       skills: [
+        { name: 'Android', desc: 'Native Android development' },
         { name: 'Flutter', desc: 'Cross-platform mobile apps' },
         { name: 'Dart', desc: 'Flutter programming language' },
-        { name: 'Firebase', desc: 'Mobile backend services' },
-        { name: 'Android', desc: 'Native Android development' }
       ]
     },
     {
@@ -64,8 +63,9 @@ const Skills = () => {
       skills: [
         { name: 'MongoDB', desc: 'NoSQL database' },
         { name: 'SQL', desc: 'Relational databases' },
+        { name: 'Firebase', desc: 'Backend as a Service' },
+        { name: 'Supabase', desc: 'Backend as a Service' },
         { name: 'AWS', desc: 'Cloud computing platform' },
-        { name: 'Firebase', desc: 'Backend as a Service' }
       ]
     },
     {
@@ -93,6 +93,7 @@ const Skills = () => {
         { name: 'Git', desc: 'Version control system' },
         { name: 'GitHub', desc: 'Code collaboration' },
         { name: 'VS Code', desc: 'Code editor' },
+        { name: 'Juypter Notebook', desc: 'Code editor' },
         { name: 'Docker', desc: 'Containerization' }
       ]
     }
@@ -227,3 +228,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
+
