@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
-import Achievements from './components/Achievements';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from './screens/Navbar';
+import Hero from './screens/Hero';
+import About from './screens/About';
+import Skills from './screens/Skills';
+import Projects from './screens/Projects';
+import Experience from './screens/Experience';
+import Achievements from './screens/Achievements';
+import Contact from './screens/Contact';
+import Footer from './screens/Footer';
 
 function App() {
   useEffect(() => {
