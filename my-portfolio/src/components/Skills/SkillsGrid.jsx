@@ -1,0 +1,144 @@
+import React from 'react';
+import { Code, Database, Smartphone, Cloud, Brain } from 'lucide-react';
+
+const SkillsGrid = ({ hoveredSkill, setHoveredSkill }) => {
+  const skillCategories = [
+    {
+      title: 'Programming Languages',
+      icon: Code,
+      color: 'text-blue-600',
+      bgColor: 'from-blue-50 to-blue-100',
+      borderColor: 'border-blue-500',
+      skills: [
+        { name: 'C', desc: 'Low-level programming' },
+        { name: 'C++', desc: 'System programming' },
+        { name: 'Java', desc: 'Enterprise applications' },
+        { name: 'Python', desc: 'Data science & backend' },
+        { name: 'JavaScript', desc: 'Modern ES6+ features' },
+        { name: 'Dart', desc: 'Flutter development' },
+        { name: 'R', desc: 'Statistical computing' }
+      ]
+    },
+    {
+      title: 'Web Technologies',
+      icon: Code,
+      color: 'text-purple-600',
+      bgColor: 'from-purple-50 to-purple-100',
+      borderColor: 'border-purple-500',
+      skills: [
+        { name: 'HTML/CSS', desc: 'Modern web standards' },
+        { name: 'React.js', desc: 'Component-based UI' },
+        { name: 'Tailwind CSS', desc: 'Utility-first CSS' },
+        { name: 'Node.js', desc: 'Server-side JavaScript' },
+        { name: 'Express.js', desc: 'Web application framework' },
+        { name: 'Flask', desc: 'Python web framework' },
+        { name: 'Socket.io', desc: 'Real-time communication' }
+      ]
+    },
+    {
+      title: 'Mobile Development',
+      icon: Smartphone,
+      color: 'text-green-600',
+      bgColor: 'from-green-50 to-green-100',
+      borderColor: 'border-green-500',
+      skills: [
+        { name: 'Android', desc: 'Native Android development' },
+        { name: 'Flutter', desc: 'Cross-platform mobile apps' },
+        { name: 'Dart', desc: 'Flutter programming language' },
+      ]
+    },
+    {
+      title: 'Databases & Cloud',
+      icon: Database,
+      color: 'text-orange-600',
+      bgColor: 'from-orange-50 to-orange-100',
+      borderColor: 'border-orange-500',
+      skills: [
+        { name: 'MongoDB', desc: 'NoSQL database' },
+        { name: 'SQL', desc: 'Relational databases' },
+        { name: 'Firebase', desc: 'Backend as a Service' },
+        { name: 'Supabase', desc: 'Backend as a Service' },
+        { name: 'AWS', desc: 'Cloud computing platform' },
+      ]
+    },
+    {
+      title: 'Data Science & ML',
+      icon: Brain,
+      color: 'text-pink-600',
+      bgColor: 'from-pink-50 to-pink-100',
+      borderColor: 'border-pink-500',
+      skills: [
+        { name: 'NumPy', desc: 'Numerical computing' },
+        { name: 'Pandas', desc: 'Data manipulation' },
+        { name: 'Matplotlib', desc: 'Data visualization' },
+        { name: 'scikit-learn', desc: 'Machine learning' },
+        { name: 'Keras', desc: 'Deep learning' },
+        { name: 'TensorFlow', desc: 'ML framework' }
+      ]
+    },
+    {
+      title: 'Tools & Version Control',
+      icon: Cloud,
+      color: 'text-indigo-600',
+      bgColor: 'from-indigo-50 to-indigo-100',
+      borderColor: 'border-indigo-500',
+      skills: [
+        { name: 'Git', desc: 'Version control system' },
+        { name: 'GitHub', desc: 'Code collaboration platform' },
+        { name: 'VS Code', desc: 'Code editor' },
+        { name: 'Jupyter Notebook', desc: 'Interactive development' },
+        { name: 'Docker', desc: 'Containerization' }
+      ]
+    }
+  ];
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      {skillCategories.map((category, categoryIndex) => {
+        const IconComponent = category.icon;
+        return (
+          <div
+            key={category.title}
+            className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-blue-100 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+            style={{ animationDelay: `${categoryIndex * 100}ms` }}
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className={`p-2 rounded-lg bg-gradient-to-r ${category.bgColor}`}>
+                <IconComponent className={`w-6 h-6 ${category.color}`} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800">
+                {category.title}
+              </h3>
+            </div>
+            <div className="space-y-3">
+              {category.skills.map((skill, skillIndex) => (
+                <div
+                  key={skill.name}
+                  className="group p-3 rounded-lg bg-gradient-to-r from-gray-50 to-blue-50 hover:from-blue-400 hover:to-purple-600 transition-all duration-300 cursor-pointer"
+                  onMouseEnter={() => setHoveredSkill(`${categoryIndex}-${skillIndex}`)}
+                  onMouseLeave={() => setHoveredSkill(null)}
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h4 className="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                        {skill.name}
+                      </h4>
+                      <p className="text-sm text-gray-600">
+                        {skill.desc}
+                      </p>
+                    </div>
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${category.bgColor} transform transition-transform duration-300 ${
+                      hoveredSkill === `${categoryIndex}-${skillIndex}` ? 'scale-150' : 'scale-100'
+                    }`}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default SkillsGrid;
