@@ -17,7 +17,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Movie-Recommendation System',
-      category: ['Web', 'ML'], // Changed to array to support multiple categories
+      category: ['Web', 'ML'], 
       image: movieImage,
       description: 'A web application that recommends movies similar to a selected title using content-based filtering.',
       techStack: ['React', 'Fast Api', 'NLP'],
