@@ -1,15 +1,19 @@
-// src/data/projectsData.js
+
 import movieImage from '../assets/movie.png';
 
-
-
 import causeListImage from '../assets/causeList.png';
-
-
-
-
+import vol from '../assets/volatility.jpg';  
 
 const projects = [
+   {
+    title: 'GAN-Powered Option Valuation Engine',
+    category: ['ML', 'Finance'],
+     image: vol,
+    description: 'A GAN-CNN based model for accurate and real-time equity option valuation.',
+    techStack: ['Python', 'GAN', 'CNN'],
+    github: 'https://github.com/sahaj645/tbc-gan', 
+    
+  },
   {
     title: 'Movie-Recommendation System',
     category: ['Web', 'ML'],
@@ -29,6 +33,8 @@ const projects = [
     github: 'https://github.com/sahaj645/Mahesh-sharma-and-associate',
     demo: 'https://mahesh-sharma-and-associate.vercel.app/',
   },
+ 
+
 
 ];
 
