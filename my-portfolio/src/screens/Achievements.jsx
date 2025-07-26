@@ -108,7 +108,7 @@
 // export default Achievements;
 
 import React from 'react';
-import AchievementsBackground from '../components/Achievements/AchievementsBackground';
+import AchievementsBackground from '../components/Achievements/AchievementsBackground.jsx';
 import AchievementsHeader from '../components/Achievements/AchievementsHeader';
 import AchievementsGrid from '../components/Achievements/AchievementsGrid';
 import achievements from "../data/achievementData"

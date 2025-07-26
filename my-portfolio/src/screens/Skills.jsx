@@ -102,7 +102,7 @@
 //   const stats = [
 //     { icon: Trophy, number: '25+', label: 'Technologies', color: 'text-yellow-600' },
 //     { icon: Star, number: '6', label: 'Categories', color: 'text-blue-600' },
-//     { icon: Code, number: '3+', label: 'Years Experience', color: 'text-purple-600' },
+//     { icon: Code, number: '1+', label: 'Years Experience', color: 'text-purple-600' },
 //     { icon: Sparkles, number: '10+', label: 'Projects Built', color: 'text-green-600' }
 //   ];
 

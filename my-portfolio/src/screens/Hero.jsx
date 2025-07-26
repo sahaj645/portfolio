@@ -127,7 +127,7 @@
 
 //           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-2 tracking-tight">
 //             <span className="inline-block transform hover:scale-105 transition-transform duration-300">
-//               Aabhas
+//               Sahaj
 //             </span>
 //             <span className="inline-block transform hover:scale-105 transition-transform duration-300 delay-75 ml-2 sm:ml-4 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
 //               Gaur
@@ -175,7 +175,7 @@
 //           {/* Social links */}
 //           <div className="flex justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
 //             <a
-//               href="https://github.com/AabhasGaur19"
+//               href="https://github.com/sahaj645"
 //               target="_blank"
 //               rel="noopener noreferrer"
 //               className="p-2 sm:p-3 bg-white/10 backdrop-blur-sm rounded-full text-white hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
@@ -183,7 +183,7 @@
 //               <Github className="w-5 h-5 sm:w-6 sm:h-6" />
 //             </a>
 //             <a
-//               href="https://www.linkedin.com/in/aabhas-gaur-13406123a/"
+//               href="https://www.linkedin.com/in/Sahaj-gaur-13406123a/"
 //               target="_blank"
 //               rel="noopener noreferrer"
 //               className="p-2 sm:p-3 bg-white/10 backdrop-blur-sm rounded-full text-white hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"

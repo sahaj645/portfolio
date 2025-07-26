@@ -21,7 +21,7 @@
 //       image: movieImage,
 //       description: 'A web application that recommends movies similar to a selected title using content-based filtering.',
 //       techStack: ['React', 'Fast Api', 'NLP'],
-//       github: 'https://github.com/AabhasGaur19/movie-recommendation-website',
+//       github: 'https://github.com/sahaj645/movie-recommendation-website',
 //       demo: 'https://movie-recommendation-website-eight.vercel.app/',
 //     },
 //     {
@@ -30,7 +30,7 @@
 //       image: chatImage,
 //       description: 'A mobile application that enables seamless real-time messaging between users.',
 //       techStack: ['Flutter', 'Firebase', 'Dart','Node.js','MongoDB Atlas','Socket.io'],
-//       github: 'https://github.com/AabhasGaur19/chat-app',
+//       github: 'https://github.com/sahaj645/chat-app',
 //       // demo: 'https://example.com',
 //     },
 //     {
@@ -39,7 +39,7 @@
 //       image: cancerImage,
 //       description: 'A smart system that helps identify the likelihood of breast cancer early for better health outcomes.',
 //       techStack: ['Python', 'NumPy','Pandas','Logistic Rgression','Random Forest'],
-//       github: 'https://github.com/AabhasGaur19/Breast-cancer-',
+//       github: 'https://github.com/sahaj645/Breast-cancer-',
 //       // demo: 'https://example.com',
 //     },
 //     {
@@ -48,7 +48,7 @@
 //       image: chrunImage,
 //       description: 'A smart system that helps understand which customers are likely to stop using a service, enabling timely action to retain them.',
 //       techStack: ['Python', 'NumPy','Pandas','Logistic Rgression','Random Forest','XG boost'],
-//       github: 'https://github.com/AabhasGaur19/Customer-churn-rate-prediction',
+//       github: 'https://github.com/sahaj645/Customer-churn-rate-prediction',
 //       // demo: 'https://example.com',
 //     },
 //     {
@@ -57,7 +57,7 @@
 //       image: travelImage,
 //       description: 'A user-friendly platform that makes planning and booking holidays easy and hassle-free.',
 //       techStack: ['HTML','Css','Java-script','AOS'],
-//       github: 'https://github.com/AabhasGaur19/Holiday-Booking',
+//       github: 'https://github.com/sahaj645/Holiday-Booking',
 //       // demo: 'https://example.com', // deploy this 
 //     },
 //     {
@@ -66,7 +66,7 @@
 //       image: causeListImage,
 //       description: 'A helpful tool that simplifies and organizes complex court case lists, making them easier to understand .',
 //       techStack: ['React', 'Node.js'],
-//       github: 'https://github.com/AabhasGaur19/Mahesh-sharma-and-associate',
+//       github: 'https://github.com/sahaj645/Mahesh-sharma-and-associate',
 //       demo: 'https://mahesh-sharma-and-associate.vercel.app/', // deploy this 
 //     },
 //     {
@@ -75,7 +75,7 @@
 //       image: todoImage,
 //       description: 'An easy-to-use app that helps you organize tasks and stay on top of your daily goals.',
 //       techStack: ['Dart','Flutter'],
-//       github: 'https://github.com/AabhasGaur19/Task-app',
+//       github: 'https://github.com/sahaj645/Task-app',
 //       // demo: '',  
 //     },
 //     {
@@ -84,7 +84,7 @@
 //       image: mealsImage,
 //       description: 'A mobile app that serves as a digital menu, making it easy to browse and choose meals on the go.',
 //       techStack: ['Dart','Flutter'],
-//       github: 'https://github.com/AabhasGaur19/Meals-app',
+//       github: 'https://github.com/sahaj645/Meals-app',
 //       // demo: '',  
 //     },
 //     {
@@ -93,7 +93,7 @@
 //       image: tttImage,
 //       description: 'A fun and interactive game that lets users enjoy classic Tic-Tac-Toe anytime.',
 //       techStack: ['Dart','Flutter'],
-//       github: 'https://github.com/AabhasGaur19/TIC-TAC-TOE-Mobile',
+//       github: 'https://github.com/sahaj645/TIC-TAC-TOE-Mobile',
 //       // demo: '',  
 //     },
 //   ];
@@ -235,7 +235,7 @@
 //         <div className="text-center mt-12 sm:mt-16">
 //           <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">Want to see more of my work?</p>
 //           <a
-//             href="https://github.com/AabhasGaur19"
+//             href="https://github.com/sahaj645"
 //             target="_blank"
 //             rel="noopener noreferrer"
 //             className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-2xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base"
@@ -285,7 +285,7 @@
 //       image: movieImage,
 //       description: 'A web application that recommends movies similar to a selected title using content-based filtering.',
 //       techStack: ['React', 'Fast Api', 'NLP'],
-//       github: 'https://github.com/AabhasGaur19/movie-recommendation-website',
+//       github: 'https://github.com/sahaj645/movie-recommendation-website',
 //       demo: 'https://movie-recommendation-website-eight.vercel.app/',
 //     },
 //     {
@@ -294,7 +294,7 @@
 //       image: chatImage,
 //       description: 'A mobile application that enables seamless real-time messaging between users.',
 //       techStack: ['Flutter', 'Firebase', 'Dart', 'Node.js', 'MongoDB Atlas', 'Socket.io'],
-//       github: 'https://github.com/AabhasGaur19/chat-app',
+//       github: 'https://github.com/sahaj645/chat-app',
 //     },
 //     {
 //       title: 'Brest cancer predection',
@@ -302,7 +302,7 @@
 //       image: cancerImage,
 //       description: 'A smart system that helps identify the likelihood of breast cancer early for better health outcomes.',
 //       techStack: ['Python', 'NumPy', 'Pandas', 'Logistic Rgression', 'Random Forest'],
-//       github: 'https://github.com/AabhasGaur19/Breast-cancer-',
+//       github: 'https://github.com/sahaj645/Breast-cancer-',
 //     },
 //     {
 //       title: 'Customer Chrun Predection',
@@ -310,7 +310,7 @@
 //       image: chrunImage,
 //       description: 'A smart system that helps understand which customers are likely to stop using a service, enabling timely action to retain them.',
 //       techStack: ['Python', 'NumPy', 'Pandas', 'Logistic Rgression', 'Random Forest', 'XG boost'],
-//       github: 'https://github.com/AabhasGaur19/Customer-churn-rate-prediction',
+//       github: 'https://github.com/sahaj645/Customer-churn-rate-prediction',
 //     },
 //     {
 //       title: 'Holiday booking site',
@@ -318,7 +318,7 @@
 //       image: travelImage,
 //       description: 'A user-friendly platform that makes planning and booking holidays easy and hassle-free.',
 //       techStack: ['HTML', 'Css', 'Java-script', 'AOS'],
-//       github: 'https://github.com/AabhasGaur19/Holiday-Booking',
+//       github: 'https://github.com/sahaj645/Holiday-Booking',
 //     },
 //     {
 //       title: 'CauseList simplifier',
@@ -326,7 +326,7 @@
 //       image: causeListImage,
 //       description: 'A helpful tool that simplifies and organizes complex court case lists, making them easier to understand.',
 //       techStack: ['React', 'Node.js'],
-//       github: 'https://github.com/AabhasGaur19/Mahesh-sharma-and-associate',
+//       github: 'https://github.com/sahaj645/Mahesh-sharma-and-associate',
 //       demo: 'https://mahesh-sharma-and-associate.vercel.app/',
 //     },
 //     {
@@ -335,7 +335,7 @@
 //       image: todoImage,
 //       description: 'An easy-to-use app that helps you organize tasks and stay on top of your daily goals.',
 //       techStack: ['Dart', 'Flutter'],
-//       github: 'https://github.com/AabhasGaur19/Task-app',
+//       github: 'https://github.com/sahaj645/Task-app',
 //     },
 //     {
 //       title: 'Meals app',
@@ -343,7 +343,7 @@
 //       image: mealsImage,
 //       description: 'A mobile app that serves as a digital menu, making it easy to browse and choose meals on the go.',
 //       techStack: ['Dart', 'Flutter'],
-//       github: 'https://github.com/AabhasGaur19/Meals-app',
+//       github: 'https://github.com/sahaj645/Meals-app',
 //     },
 //     {
 //       title: 'Tic-Tac-Toe',
@@ -351,7 +351,7 @@
 //       image: tttImage,
 //       description: 'A fun and interactive game that lets users enjoy classic Tic-Tac-Toe anytime.',
 //       techStack: ['Dart', 'Flutter'],
-//       github: 'https://github.com/AabhasGaur19/TIC-TAC-TOE-Mobile',
+//       github: 'https://github.com/sahaj645/TIC-TAC-TOE-Mobile',
 //     },
 //   ];
 
@@ -390,7 +390,7 @@ import projects from '../data/projectData';
 const Projects = () => {
   const [category, setCategory] = useState('All');
 
-  const categories = ['All', 'Web', 'Mobile', 'ML'];
+  const categories = ['All', 'Web', 'ML'];
 
   const filteredProjects = category === 'All'
     ? projects

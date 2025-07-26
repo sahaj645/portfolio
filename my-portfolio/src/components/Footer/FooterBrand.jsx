@@ -7,7 +7,7 @@ const FooterBrand = ({ skills }) => {
       <div className="space-y-3 sm:space-y-4">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
           <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Aabhas Gaur
+            Sahaj Gaur
           </span>
         </h2>
         <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-xs sm:text-sm text-gray-400">
@@ -41,7 +41,7 @@ const FooterBrand = ({ skills }) => {
       <div className="space-y-2 text-xs sm:text-sm text-gray-400">
         <div className="flex items-center gap-2">
           <MapPin className="w-4 h-4" />
-          <span>Kota, Rajasthan, India</span>
+          <span> Chennai, India</span>
         </div>
       </div>
     </div>

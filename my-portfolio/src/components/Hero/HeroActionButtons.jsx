@@ -5,8 +5,8 @@ const HeroActionButtons = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 px-4">
       <a
-        href="/resume.pdf"
-        className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-600 rounded-full hover:bg-blue-50 transition-all duration-300 text-sm sm:text-base lg:text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2 w-full sm:w-auto"
+        href="/Sahaj_Gaur.pdf" 
+       download className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-600 rounded-full hover:bg-blue-50 transition-all duration-300 text-sm sm:text-base lg:text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2 w-full sm:w-auto"
       >
         <Download className="w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
         View Resume

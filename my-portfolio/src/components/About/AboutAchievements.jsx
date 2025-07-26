@@ -3,9 +3,9 @@ import { Trophy, Star, Award, Code } from 'lucide-react';
 
 const AboutAchievements = () => {
   const achievements = [
-    { icon: Trophy, label: 'CGPA', value: '9.19/10', color: 'text-yellow-600' },
-    { icon: Star, label: '12th Grade', value: '94.8%', color: 'text-blue-600' },
-    { icon: Award, label: '10th Grade', value: '91.2%', color: 'text-purple-600' },
+    { icon: Trophy, label: 'CGPA', value: '8.64/10', color: 'text-yellow-600' },
+    { icon: Star, label: '12th Grade', value: '85.2%', color: 'text-blue-600' },
+    { icon: Award, label: '10th Grade', value: '91.8%', color: 'text-purple-600' },
     { icon: Code, label: 'Projects', value: '10+', color: 'text-green-600' },
   ];
 

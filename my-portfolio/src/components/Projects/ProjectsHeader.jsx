@@ -7,7 +7,7 @@ const ProjectsHeader = () => {
         Featured Projects
       </h2>
       <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-        Showcasing innovative solutions and creative implementations across various technologies
+        A curated selection of my most impactful projects
       </p>
     </div>
   );

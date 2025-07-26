@@ -7,7 +7,7 @@ const AboutHeader = () => {
         About Me
       </h2>
       <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-        Passionate developer crafting digital experiences with modern technologies
+        Competitive and driven developer who thrives on solving complex problems and delivering high-quality digital solutions with modern technologies.
       </p>
     </div>
   );

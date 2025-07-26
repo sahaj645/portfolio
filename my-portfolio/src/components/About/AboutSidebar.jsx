@@ -12,7 +12,7 @@ const AboutSidebar = () => {
         <div className="space-y-3">
           <div className="flex justify-between items-center">
             <span className="text-gray-600 text-sm sm:text-base">Current Year</span>
-            <span className="font-semibold text-gray-800 text-sm sm:text-base">4th Year</span>
+            <span className="font-semibold text-gray-800 text-sm sm:text-base">3rd </span>
           </div>
           <div className="flex justify-between items-center">
             <span className="text-gray-600 text-sm sm:text-base">Specialization</span>
@@ -20,11 +20,11 @@ const AboutSidebar = () => {
           </div>
           <div className="flex justify-between items-center">
             <span className="text-gray-600 text-sm sm:text-base">Experience</span>
-            <span className="font-semibold text-gray-800 text-sm sm:text-base">3+ Years</span>
+            <span className="font-semibold text-gray-800 text-sm sm:text-base">1+ Year</span>
           </div>
           <div className="flex justify-between items-center">
             <span className="text-gray-600 text-sm sm:text-base">Location</span>
-            <span className="font-semibold text-gray-800 text-sm sm:text-base">Rajasthan, IN</span>
+            <span className="font-semibold text-gray-800 text-sm sm:text-base">Chennai,IN</span>
           </div>
         </div>
       </div>
